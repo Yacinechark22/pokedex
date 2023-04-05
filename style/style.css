@@ -1,0 +1,77 @@
+body {
+  background-blend-mode: soft-light, normal;
+  font-family: 'Open Sans', sans-serif;
+  transition: background 1s ease-in-out;
+}
+
+#hero {
+  min-height: 50vh;
+}
+
+#pokeName {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#shuffle {
+  cursor: pointer;
+}
+
+.progress {
+  height: 30px;
+}
+
+#bgId {
+  font-weight: bold;
+  font-size: 22vw;
+  color: white;
+  opacity: .15;
+
+  position: absolute;
+  transform: translateY(-50%);
+  right: 0;
+  top: 0;
+
+
+  z-index: -1;
+}
+
+#gonext,
+#goprev {
+  cursor: pointer;
+  opacity: .7;
+  transition: all .3s ease;
+}
+
+#gonext:hover,
+#goprev:hover {
+  opacity: 1;
+}
+
+
+@media screen and (min-width: 1500px) {
+  #bgId {
+    font-size: 20rem;
+  }
+}
+
+
+@media (992px <=width <=1200px) {
+  #pokeName {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+}
+
+
+/* Bootstrap override */
+
+.form-control:focus {
+  border-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+
+.form-control::placeholder {
+  color: #F2F2F2;
+}
